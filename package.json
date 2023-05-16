@@ -1,0 +1,17 @@
+{
+  "name": "esm-db",
+  "version": "1.0.0",
+  "description": "ESM database repository",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "npx knex migrate:latest",
+    "rollback": "npx knex migrate:rollback"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.4.2",
+    "objection": "^3.0.1",
+    "pg": "^8.11.0"
+  }
+}
