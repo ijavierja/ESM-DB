@@ -5,7 +5,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable("employees", (table) => {
     table.string("id").unique();
-    table.string("login");
+    table.string("login").unique();
     table.string("name");
     table.string("salary");
   });
